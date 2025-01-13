@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isakjanofv-Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+    <div id="quiz">
+      <div id="question-container">
+        <h2 id="question">Savol bu yerda bo'ladi</h2>
+        <ul id="options">
+          <li><button class="option-btn" onclick="selectOption(0)">Variant 1</button></li>
+          <li><button class="option-btn" onclick="selectOption(1)">Variant 2</button></li>
+          <li><button class="option-btn" onclick="selectOption(2)">Variant 3</button></li>
+          <li><button class="option-btn" onclick="selectOption(3)">Variant 4</button></li>
+        </ul>
+      </div>
+      
+      <button id="next-btn" onclick="nextQuestion()">Keyingisi</button>
+    </div>
+   
+    <div id="result-container" class="hidden">
+      <h2>Natijangiz: <span id="score"></span>/5</h2>
+      <button onclick="restartQuiz()">Qayta boshlash</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
